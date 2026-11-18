@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$titre — $nom</title>
+  <meta name="description" content="$description">
+  <link rel="stylesheet" href="pages-legales.css">
+</head>
+<body class="$theme">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="$site"><img src="$logo" alt="Accueil $nom" width="$largeur" height="$hauteur"></a>
+      <nav class="site-nav" aria-label="Pages légales">
+        <a href="mentions-legales.html"$mentions_courante>Mentions légales</a>
+        <a href="politique-de-confidentialite-donnees-personnelles.html"$politique_courante>Politique de confidentialité</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+    <div class="hero">
+      <div class="container">
+        <p class="eyebrow">$rubrique</p>
+        <h1>$titre</h1>
+        <p class="hero-intro">$introduction</p>
+        <dl class="key-facts">
+$resume
+        </dl>
+      </div>
+    </div>
+
+$contenu
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© $annee $nom <span class="footer-separator">·</span> <span>Mis à jour le <time datetime="$date_iso">$date_longue</time></span></p>
+      <a href="#sommaire">Revenir au sommaire <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
