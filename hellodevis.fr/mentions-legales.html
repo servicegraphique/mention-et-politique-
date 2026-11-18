@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mentions légales — HelloDevis</title>
+  <style>
+    .legal-notice {
+      --legal-accent: #a33426;
+      --legal-tint: #fff1ed;
+      box-sizing: border-box;
+      max-width: 56rem;
+      margin-inline: auto;
+      padding: clamp(1rem, 4vw, 3rem);
+      color: #202b33;
+      font: 400 1rem/1.65 system-ui, sans-serif;
+      overflow-wrap: anywhere;
+    }
+    .legal-notice h1, .legal-notice h2, .legal-notice h3 { color: inherit; line-height: 1.2; }
+    .legal-notice h1 { margin: 0.4rem 0 0.75rem; font-size: clamp(2rem, 5vw, 3.5rem); }
+    .legal-notice h2 { margin: 0 0 0.75rem; font-size: clamp(1.25rem, 3vw, 1.65rem); }
+    .legal-notice h3 { margin: 1rem 0 0.25rem; font-size: 1.1rem; }
+    .legal-notice p { margin: 0.5rem 0 0; }
+    .legal-notice a { color: var(--legal-accent); text-decoration: underline; text-underline-offset: 0.16em; }
+    .legal-notice a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    .legal-hero { padding-block-end: 1.5rem; }
+    .legal-hero img { display: block; width: min(100%, 12rem); height: auto; margin-bottom: 1rem; }
+    .legal-notice .legal-eyebrow { color: var(--legal-accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .legal-notice .legal-index, .legal-notice section {
+      margin-block: 1rem;
+      padding: clamp(1rem, 4vw, 2rem);
+      border-radius: 0.85rem;
+    }
+    .legal-notice .legal-index { background: var(--legal-tint); }
+    .legal-notice .legal-index ol { margin: 0; padding-inline-start: 1.35rem; }
+    .legal-notice .legal-index li + li { margin-top: 0.25rem; }
+    .legal-notice section { background: #fff; border: 1px solid #dbe1e6; }
+    .legal-notice dl { display: grid; gap: 0.45rem 1.25rem; margin: 1rem 0 0; }
+    .legal-notice dt { font-weight: 650; }
+    .legal-notice dd { margin: 0; }
+    .legal-notice address { margin-top: 0.75rem; padding: 0.75rem 1rem; background: var(--legal-tint); border-radius: 0.5rem; font-style: normal; }
+    .legal-notice .legal-footer { margin-top: 1.5rem; border-top: 1px solid #dbe1e6; padding-top: 0.75rem; }
+    @media (min-width: 40rem) {
+      .legal-notice dl { grid-template-columns: minmax(8rem, 1fr) 3fr; }
+    }
+    @media (max-width: 39.99rem) {
+      .legal-notice dd:not(:last-child) { margin-bottom: 0.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <main id="contenu" class="legal-notice">
+    <header class="legal-hero">
+      <a href="https://www.hellodevis.fr/"><img src="logo-hellodevis.png" alt="Accueil HelloDevis" width="274" height="50"></a>
+      <p class="legal-eyebrow">Informations légales</p>
+      <h1>Mentions légales</h1>
+      <p>Consultez les informations sur l’éditeur du site <strong>HelloDevis</strong>, ses marques, l’hébergement et les contacts utiles.</p>
+    </header>
+
+    <nav id="sommaire" class="legal-index" aria-labelledby="titre-sommaire">
+      <h2 id="titre-sommaire">Sommaire</h2>
+      <ol>
+        <li><a href="#editeur">Éditeur du site</a></li>
+        <li><a href="#marques">Marques et services édités</a></li>
+        <li><a href="#hebergement">Hébergement et conservation des données</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ol>
+    </nav>
+
+    <section aria-labelledby="editeur">
+      <p class="legal-eyebrow" aria-hidden="true">01</p>
+      <h2 id="editeur">Éditeur du site</h2>
+      <p>Le site est édité par la société <strong>Hellodevis</strong>.</p>
+      <dl>
+        <dt>Société</dt>
+        <dd>Hellodevis, SAS au capital de 30 000 €</dd>
+        <dt>Siège social</dt>
+        <dd>5 avenue de la République, 75011 Paris</dd>
+        <dt>Immatriculation</dt>
+        <dd>RCS Paris — B 798 043 634</dd>
+        <dt>Site</dt>
+        <dd><a href="https://www.hellodevis.fr/">www.hellodevis.fr</a></dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="marques">
+      <p class="legal-eyebrow" aria-hidden="true">02</p>
+      <h2 id="marques">Marques et services édités</h2>
+      <h3>HelloLead</h3>
+      <p>Marque commerciale de la société Hellodevis, dédiée à la mise en relation commerciale. <a href="https://www.hellolead.pro/">www.hellolead.pro</a></p>
+      <h3>ComparateurPro</h3>
+      <p>Marque digitale de la société Hellodevis, dédiée au recueil et à la gestion des demandes de devis et d’information. <a href="https://www.comparateurpro.fr/">www.comparateurpro.fr</a></p>
+      <h3>Ubepro</h3>
+      <p>Marque digitale de la société Hellodevis, dédiée au recueil et à la gestion des demandes de devis et d’information. <a href="https://www.ubepro.fr/">www.ubepro.fr</a></p>
+    </section>
+
+    <section aria-labelledby="hebergement">
+      <p class="legal-eyebrow" aria-hidden="true">03</p>
+      <h2 id="hebergement">Hébergement et conservation des données</h2>
+      <!-- Hébergement à confirmer avant publication : la version propre à HelloDevis indique Plug &amp; Tel ; la page publique consultée reprend la notice HelloLead (OVH). -->
+      <p>Les mentions propres à HelloDevis indiquent les coordonnées d’hébergement suivantes&nbsp;:</p>
+      <address>
+        <strong>Plug &amp; Tel</strong><br>
+        8 rue des Champs Odés<br>
+        78200 Buchelay<br>
+        Tél. <a href="tel:+33172897101">01 72 89 71 01</a> — <a href="https://www.plugandtel.com/">www.plugandtel.com</a>
+      </address>
+      <p>Les mesures de protection des données incluent des accès restreints aux serveurs, des mots de passe et des pare-feu.</p>
+      <p>Le détail des traitements, de leurs finalités et des durées de conservation figure dans la <a href="https://www.hellodevis.fr/politique-de-confidentialite-donnees-personnelles/">politique de confidentialité</a>.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <p class="legal-eyebrow" aria-hidden="true">04</p>
+      <h2 id="contact">Nous contacter</h2>
+      <dl>
+        <dt>Contact général</dt>
+        <dd><a href="mailto:contact@hellodevis.fr">contact@hellodevis.fr</a></dd>
+        <dt>Données personnelles</dt>
+        <dd><a href="mailto:dpo@hellodevis.fr">dpo@hellodevis.fr</a></dd>
+        <dt>Courrier</dt>
+        <dd>Hellodevis, 5 avenue de la République, 75011 Paris</dd>
+        <dt>Téléphone</dt>
+        <dd><a href="tel:+33756986082">07 56 98 60 82</a></dd>
+      </dl>
+    </section>
+
+    <footer class="legal-footer">
+      <p>© HelloDevis · <a href="https://www.hellodevis.fr/politique-de-confidentialite-donnees-personnelles/">Politique de confidentialité</a> · <a href="#sommaire">Revenir au sommaire</a></p>
+    </footer>
+  </main>
+</body>
+</html>
