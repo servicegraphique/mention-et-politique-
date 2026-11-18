@@ -1,0 +1,64 @@
+<div class="container reading-layout">
+  <nav class="toc" id="sommaire" aria-labelledby="titre-sommaire">
+    <h2 id="titre-sommaire">Sommaire</h2>
+    <ol>
+      <li><a href="#editeur">Éditeur du site</a></li>
+      <li><a href="#marques">Marques et services édités</a></li>
+      <li><a href="#hebergement">Hébergement et conservation des données</a></li>
+      <li><a href="#contact">Nous contacter</a></li>
+    </ol>
+  </nav>
+
+  <div class="chapters">
+    <section class="chapter" id="editeur" aria-labelledby="titre-editeur">
+      <header class="chapter-heading">
+        <span class="chapter-number" aria-hidden="true">01</span>
+        <h2 id="titre-editeur">Éditeur du site</h2>
+      </header>
+      <p>$texte_editeur</p>
+      <dl class="detail-list">
+        <dt>Société</dt>
+        <dd>Hellodevis, SAS au capital de 30 000 €</dd>
+        <dt>Siège social</dt>
+        <dd>5 avenue de la République, 75011 Paris</dd>
+        <dt>Immatriculation</dt>
+        <dd>RCS Paris — B 798 043 634</dd>
+        <dt>Site</dt>
+        <dd><a href="$site">www.$domaine</a></dd>
+      </dl>
+    </section>
+
+    <section class="chapter" id="marques" aria-labelledby="titre-marques">
+      <header class="chapter-heading">
+        <span class="chapter-number" aria-hidden="true">02</span>
+        <h2 id="titre-marques">Marques et services édités</h2>
+      </header>
+      <p>La société Hellodevis exploite des marques de mise en relation et de recherche de devis.</p>
+      <div class="brand-grid">
+$marques
+      </div>
+    </section>
+
+    <section class="chapter" id="hebergement" aria-labelledby="titre-hebergement">
+      <header class="chapter-heading">
+        <span class="chapter-number" aria-hidden="true">03</span>
+        <h2 id="titre-hebergement">Hébergement et conservation des données</h2>
+      </header>
+$hebergeur_site
+      <h3>Conservation des données personnelles</h3>
+      <p>Les données personnelles sont conservées dans un centre d’hébergement sécurisé situé en France, à l’adresse suivante&nbsp;:</p>
+$adresse_ovh
+      <p>Les mesures de protection comprennent des accès restreints aux serveurs ainsi que des protections informatiques par mots de passe et pare-feu.</p>
+      <p>Le détail des traitements, de leurs finalités et des durées de conservation figure dans notre <a href="politique-de-confidentialite-donnees-personnelles.html">politique de confidentialité</a>.</p>
+    </section>
+
+    <section class="chapter" id="contact" aria-labelledby="titre-contact">
+      <header class="chapter-heading">
+        <span class="chapter-number" aria-hidden="true">04</span>
+        <h2 id="titre-contact">Nous contacter</h2>
+      </header>
+      <p>Pour toute question relative au site ou à ces mentions légales&nbsp;:</p>
+$contacts
+    </section>
+  </div>
+</div>

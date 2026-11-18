@@ -1,26 +1,25 @@
-# Politique de confidentialité et mentions légales — 18 novembre 2026
+# Rapport — Pages légales, 18 novembre 2026
 
-La colonne « Publié » indique si **les changements de cette branche** ont été mis en ligne. Les trois URL publiques de la politique sont accessibles ; elles affichent déjà une section « Prospection téléphonique » sans renvoi vers Bloctel, dans une version différente des exports du dépôt.
+Les deux exemples fournis sont des enveloppes WordPress. Leur contenu est chargé depuis les [mentions légales](https://www.hellodevis.fr/mentions-legales/) et la [politique de confidentialité](https://www.hellodevis.fr/politique-de-confidentialite-donnees-personnelles/) de HelloDevis. Les fichiers du dépôt reprennent l’organisation de ces pages, sans recopier les iframes ni les dépendances des exports.
 
-| Site | URL modifiée | Paragraphe remplacé | Autres occurrences de « Bloctel » trouvées | Publié | Remarques |
-|---|---|---|---|---|---|
-| ComparateurPro | [HTML modifié](comparateurpro.fr/politique-de-confidentialite-donnees-personnelles.html) · [URL publique](https://www.comparateurpro.fr/politique-de-confidentialite-donnees-personnelles/) | Oui, dans le dépôt | Aucune autre repérée | Non | Les deux H3 reprennent la classe des titres voisins. |
-| HelloDevis | [URL publique](https://www.hellodevis.fr/politique-de-confidentialite-donnees-personnelles/), non modifiée | Non | Ancien renvoi retrouvé dans l’index de recherche de cette même politique ; aucune autre occurrence repérée | Non | Aucun fichier source de la politique dans le dépôt. La page publique consultée ne contient pas le bloc à remplacer. |
-| Ubepro | [HTML modifié](ubepro.fr/politique-de-confidentialite-donnees-personnelles.html) · [URL publique](https://www.ubepro.fr/politique-de-confidentialite-donnees-personnelles/) | Oui, dans le dépôt | Aucune autre repérée | Non | Les deux H3 reprennent la classe et la graisse des titres voisins. |
+| Site | Mentions légales | Politique de confidentialité | Publié |
+|---|---|---|---|
+| ComparateurPro | [Optimisées](comparateurpro.fr/mentions-legales.html) | [Optimisée](comparateurpro.fr/politique-de-confidentialite-donnees-personnelles.html) | Non |
+| HelloDevis | [Optimisées](hellodevis.fr/mentions-legales.html) | [Créée à partir de la page chargée par l’exemple](hellodevis.fr/politique-de-confidentialite-donnees-personnelles.html) | Non |
+| Ubepro | [Optimisées](ubepro.fr/mentions-legales.html) | [Optimisée](ubepro.fr/politique-de-confidentialite-donnees-personnelles.html) | Non |
 
-## Vérifications
+## Corrections et vérifications
 
-- Comme sur [HelloLead](https://www.hellolead.pro/politique-de-confidentialite-donnees-personnelles/), les blocs B2C et B2B se trouvent après les droits de l’utilisateur et avant « Nous contacter ». Le diff confirme que seul l’ancien bloc a été remplacé dans les deux politiques HTML. Le reste du contenu, des liens et des métadonnées est inchangé.
-- Chromium : blocs visibles et sans débordement à 1 440, 390 et 320 px ; mise en page identique hors du bloc, à l’exception du décalage vertical attendu de ce qui suit. Les feuilles Webflow d’origine ne sont pas fournies dans le dépôt : le rendu graphique de production reste à valider.
-- Aucun doublon desktop/mobile ou de landing page dans les fichiers fournis. Le [formulaire Fiat Pro](https://www.ubepro.fr/fiat-pro/) renvoie à la politique générale en pied de page et à une [politique partenaire Stellantis](https://www.ubepro.fr/fiat-politique-de-confidentialite/) distincte dans le formulaire ; ces deux pages n’ont pas été modifiées. La recherche a porté sur les fichiers du dépôt et les pages publiques consultables ou indexées. Sans sitemap et avec certaines pages inaccessibles (dont Ubepro Sécu), elle ne garantit pas une couverture exhaustive des sites.
+- Les six pages ont un sommaire cliquable, des rubriques numérotées, les coordonnées et le logo du bon site. Les liens de confidentialité Twilio et de désactivation Google Analytics ont été corrigés. Les deux paragraphes B2C et B2B restent **mot pour mot** ceux fournis, chacun sous un H3. Aucune référence à Bloctel ne figure dans les fichiers HTML.
+- Les fichiers livrés pèsent **46 % de moins** (HTML et CSS hors logos : 203 600 → 109 583 octets), malgré l’ajout d’une sixième page. Au chargement, chaque page ne demande que son CSS et son logo, tous deux locaux. Les [modèles partagés](modeles/) évitent de recopier les changements entre sites.
+- Validation HTML5 et contrôle Chromium à **320, 390, 768 et 1 440 px** : logos et navigation chargés, aucune section ne déborde, sommaire et lien d’accès au contenu fonctionnels. L’analyse automatisée axe n’a signalé aucune violation dans les règles WCAG 2.1 A/AA testées à 390 et 1 440 px.
+- **Avant publication :** confirmer l’hébergeur web et les contacts. Pour HelloDevis, Plug & Tel figure dans les [mentions spécifiques indexées](https://hellodevis.fr/mentions-legales/) ; OVH est indiqué pour la conservation des données personnelles dans la politique de référence. La page distingue ces deux informations au lieu de présumer qu’elles désignent le même hébergement.
 
-## Mentions légales
+## Historique de la recherche Bloctel
 
-Trois pages ont été préparées, sur le modèle des [mentions légales de HelloLead](https://www.hellolead.pro/mentions-legales/) : [ComparateurPro](comparateurpro.fr/mentions-legales.html), [HelloDevis](hellodevis.fr/mentions-legales.html) et [Ubepro](ubepro.fr/mentions-legales.html). Elles reprennent les rubriques Éditeur, Marques, Hébergement et Contact, les logos du dépôt et les liens propres à chaque site. Logos, sommaire et mise en page ont été vérifiés localement aux trois largeurs. Elles n’ont pas été publiées.
+La première vérification a trouvé le même ancien paragraphe dans les exports ComparateurPro et Ubepro et une version indexée pour HelloDevis. Elle n’a pas révélé d’autre occurrence dans les fichiers et pages consultables. Le [formulaire Fiat Pro](https://www.ubepro.fr/fiat-pro/) et sa [politique partenaire Stellantis](https://www.ubepro.fr/fiat-politique-de-confidentialite/) sont distincts et n’ont pas été modifiés. La recherche n’était pas exhaustive : certaines pages publiques, dont Ubepro Sécu, étaient inaccessibles.
 
-**À confirmer avant publication pour HelloDevis :** les mentions spécifiques indexées indiquent Plug & Tel [2](https://hellodevis.fr/mentions-legales/), tandis que l’URL publique consultée reprend le contenu de HelloLead, qui indique OVH. La page préparée reprend Plug & Tel sans présenter ce point comme vérifié pour la version actuelle.
-
-## Ancien texte — pour un retour arrière
+### Ancien texte — pour un retour arrière
 
 **ComparateurPro et Ubepro — texte identique dans les deux exports :**
 
@@ -31,5 +30,3 @@ Trois pages ont été préparées, sur le modèle des [mentions légales de Hell
 > Par ailleurs, les utilisateurs du site sont informés, en application de l’article Article L121-34 du code de la consommation tel que modifié par la loi n° 2014-344 du 17 mars 2014 dite loi Hamon sur la consommation en son article 9, de la possibilité d’inscrire leur numéro de téléphone sur une liste d’opposition au démarchage téléphonique en dehors des cas de relations contractuelles préexistantes.
 
 > Ce service est disponible à l’adresse http://www.bloctel.gouv.fr.
-
-Pour terminer HelloDevis sans réécrire le reste de la page, il faut la source qui fait foi (export du CMS, HTML ou Code Embed). Pour la mise en ligne, appliquer les changements dans les sources CMS/Webflow des pages publiques plutôt que remplacer leurs pages entières par les anciens exports.
